@@ -1501,14 +1501,27 @@ html.js .reveal.is-visible {
     --section-pad-x: 1rem;
   }
 
+  #hero {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .hero-title {
-    font-size: clamp(4.5rem, 25vw, 8rem);
+    font-size: clamp(3.9rem, 19vw, 6.4rem);
   }
 
   .hero-buttons {
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
+  }
+
+  .scroll-cue {
+    left: 0;
+    right: 0;
+    transform: none;
+    width: 100%;
+    align-items: center;
   }
 
   .btn {
@@ -1524,6 +1537,17 @@ html.js .reveal.is-visible {
   .site-footer {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #hero {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .hero-title {
+    font-size: clamp(3.5rem, 18vw, 5.8rem);
   }
 }
 
