@@ -492,9 +492,8 @@ button:focus-visible {
 }
 
 .hero-smiley {
-  width: clamp(60px, 10vw, 110px);
-  margin: 0.5rem auto 1rem;
-  color: var(--color-yellow);
+  width: clamp(80px, 14vw, 160px);
+  margin: 0.75rem auto 1.25rem;
   display: flex;
   justify-content: center;
   position: relative;
@@ -503,10 +502,11 @@ button:focus-visible {
   animation: fade-up 0.8s var(--ease-out) 0.5s forwards;
 }
 
-.hero-smiley svg {
+.hero-smiley img {
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 0 12px var(--color-yellow-glow));
+  display: block;
+  filter: drop-shadow(0 0 14px var(--color-yellow-glow));
 }
 
 .hero-subtitle {
