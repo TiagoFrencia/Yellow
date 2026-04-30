@@ -1345,6 +1345,13 @@ html.js .reveal.is-visible {
   z-index: 1;
 }
 
+.cta-title .punct {
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.85em;
+  vertical-align: 0.05em;
+}
+
 .cta-subtitle {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.5);
