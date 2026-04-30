@@ -205,11 +205,14 @@ button:focus-visible {
 /* Logo */
 .nav-logo {
   font-family: var(--font-display);
-  font-size: 1.55rem;
+  font-size: 1.85rem;
   color: var(--color-yellow);
   line-height: 1;
   display: flex;
   flex-direction: column;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.8px var(--color-yellow);
+  letter-spacing: 0.04em;
 }
 
 .nav-logo small {
@@ -421,6 +424,44 @@ button:focus-visible {
 }
 
 /* Contenido hero */
+.hero-arch {
+  width: clamp(260px, 32vw, 440px);
+  margin: 0 auto 0.5rem;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  animation: fade-up 0.7s var(--ease-out) 0.2s forwards;
+}
+
+.hero-arch svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.hero-arch-text {
+  font-family: var(--font-display);
+  font-size: 54px;
+  fill: var(--color-yellow);
+  letter-spacing: 12px;
+  paint-order: stroke;
+  stroke: var(--color-yellow);
+  stroke-width: 1.5px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .hero-eyebrow {
   font-family: var(--font-mono);
   font-size: 0.65rem;
@@ -439,6 +480,8 @@ button:focus-visible {
   font-size: clamp(5rem, 22vw, 15rem);
   line-height: 0.9;
   color: var(--color-yellow);
+  -webkit-text-stroke: 3px var(--color-yellow);
+  text-stroke: 3px var(--color-yellow);
   text-shadow:
     0 0 100px rgba(245, 200, 66, 0.2),
     0 4px 0 rgba(0, 0, 0, 0.5);
