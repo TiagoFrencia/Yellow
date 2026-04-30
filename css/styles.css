@@ -24,7 +24,7 @@
   --color-wa-green: #25D366;
 
   /* Tipografías */
-  --font-display: 'Titan One', cursive;
+  --font-display: 'Bagel Fat One', cursive;
   --font-body:    'DM Sans', sans-serif;
   --font-mono:    'Space Mono', monospace;
 
@@ -446,6 +446,24 @@ button:focus-visible {
   z-index: 1;
   opacity: 0;
   animation: fade-up 0.8s var(--ease-out) 0.4s forwards;
+}
+
+.hero-smiley {
+  width: clamp(60px, 10vw, 110px);
+  margin: 0.5rem auto 1rem;
+  color: var(--color-yellow);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  animation: fade-up 0.8s var(--ease-out) 0.5s forwards;
+}
+
+.hero-smiley svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 12px var(--color-yellow-glow));
 }
 
 .hero-subtitle {
